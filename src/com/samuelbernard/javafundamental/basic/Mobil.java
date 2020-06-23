@@ -1,6 +1,6 @@
 package com.samuelbernard.javafundamental.basic;
 
-public class Mobil {
+public class Mobil implements Kemampuan{
     private String merk;
     private int harga;
     private  double kecepatan;
@@ -13,6 +13,12 @@ public class Mobil {
         this.kecepatan = kecepatan;
         this.punyaAtap = punyaAtap;
         this.nomorAwal = nomorAwal;
+        cetakBintang();
+    }
+
+    @Override
+    public void berjalan(boolean kenyataan) {
+        System.out.println(kenyataan);
     }
 
     public void cetakMerk(){
@@ -22,5 +28,16 @@ public class Mobil {
     public void cetakHarga(){
         System.out.println(harga);
     }
+
+    public void cetakBintang(){
+        for (int i = 1; i < 5; i++){
+            for (int I = 0; I<i; I ++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+
 
 }

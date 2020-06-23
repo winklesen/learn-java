@@ -8,6 +8,8 @@ public class Main {
         Mobil mobil = new Mobil("avanza", 5000, 5.00, true, 'B');
         mobil.cetakMerk();
         mobil.cetakHarga();
+        mobil.berjalan(true);
+
 
     }
 
