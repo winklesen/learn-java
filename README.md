@@ -5,3 +5,4 @@ My Java Fundamental
 Tipe Data Numerik (Integer)
 Tipe Data Numerik (Floating)
 Literals
+Underscore
